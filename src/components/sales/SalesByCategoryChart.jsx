@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
+
 const salesByCategory = [
 	{ name: "Electronics", value: 400 },
 	{ name: "Clothing", value: 300 },
@@ -13,12 +14,12 @@ const COLORS = ["#8884d8", "#82ca9d", "#ffc658", "#ff8042", "#0088FE"];
 const SalesByCategoryChart = () => {
 	return (
 		<motion.div
-			className='bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700'
+			className='bg-white shadow-lg rounded-xl p-6 border border-gray-200'
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.3 }}
 		>
-			<h2 className='text-xl font-semibold text-gray-100 mb-4'>Sales by Category</h2>
+			<h2 className='text-xl font-semibold text-gray-800 mb-4'>Sales by Category</h2>
 
 			<div style={{ width: "100%", height: 300 }}>
 				<ResponsiveContainer>
@@ -38,10 +39,10 @@ const SalesByCategoryChart = () => {
 						</Pie>
 						<Tooltip
 							contentStyle={{
-								backgroundColor: "rgba(31, 41, 55, 0.8)",
-								borderColor: "#4B5563",
+								backgroundColor: "rgba(255, 255, 255, 0.9)",
+								borderColor: "#D1D5DB",
 							}}
-							itemStyle={{ color: "#E5E7EB" }}
+							itemStyle={{ color: "#374151" }}
 						/>
 						<Legend />
 					</PieChart>
@@ -50,4 +51,5 @@ const SalesByCategoryChart = () => {
 		</motion.div>
 	);
 };
+
 export default SalesByCategoryChart;
