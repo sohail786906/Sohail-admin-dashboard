@@ -23,7 +23,7 @@ To get started with this project, follow the steps below:
 1. Clone the repository:
 
     ```bash
-    git clone github.com/sohail786906/Zemran-admin-dashboard/
+    git clone github.com/sohail786906/sohail-admin-dashboard/
     cd react-admin-dashboard
     ```
 
